@@ -1,5 +1,6 @@
 # PyMinerPit
 
-PRUEBA DE GIT PARA RICHARD
+
+## awa de uwu
 
 Students looking for a futurist mining
