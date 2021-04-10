@@ -5,7 +5,7 @@ import  numpy as np
 
 
 # importation of data
-file = "Datalog.txkt"
+file = "Datalog.txt"
 
 (name_file, type_file) = file.split('.')
 
@@ -35,7 +35,7 @@ for position_fil in range(fil):
 
         Sum_columns = 0
         value_positive = Section_cone[position_fil][position_column]
-        Array_zero=[]
+        Array_zero = []
         # the position_fil to define the size cone
 
         # Restrictions for the formation of floating cone to 45°
