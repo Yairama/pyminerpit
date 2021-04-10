@@ -1,13 +1,13 @@
 import  numpy as np
-
+import os
 # file="Datalog.txt"
 # data=np.loadtxt(file,delimiter='\t',skiprows=0)
 
 
 # importation of data
-file = "data/Datalog.txt"
+file = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data/Datalog.csv'))
 
-(name_file, type_file) = file.split('.')
+(name_file, type_file) = file.split('g.')
 
 if type_file=='txt':
     data_original = np.loadtxt(file, delimiter='\t', skiprows=0)
