@@ -5,14 +5,16 @@ import  numpy as np
 
 
 # importation of data
-file = "Datalog.txkt"
+file = "Datalog.csv"
 
 (name_file, type_file) = file.split('.')
+
+print(type_file)
 
 if type_file=='txt':
     data_original = np.loadtxt(file, delimiter='\t', skiprows=0)
 elif type_file=='csv':
-    data_original = np.loadtxt(file, delimiter='', skiprows=0)
+    data_original = np.loadtxt(file, delimiter=',', skiprows=0)
 else:
     print('-----------file not defined-------')
     exit()
