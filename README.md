@@ -16,5 +16,6 @@ Jus students looking for a futurist mining
 
 ### Floating Cone Algorithm
 _Using floating cone:_
+
 The cone's data can be changed in the Datalog.csv/txt you can change the format in the code.
 To run the scrip just open a cmd in the project folder and run the command `python floating_cone.py` and you will se the results in the console.

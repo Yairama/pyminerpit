@@ -5,7 +5,7 @@ import  numpy as np
 
 
 # importation of data
-file = "Datalog.txt"
+file = "data/Datalog.txt"
 
 (name_file, type_file) = file.split('.')
 
