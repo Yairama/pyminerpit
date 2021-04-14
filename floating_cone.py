@@ -1,11 +1,11 @@
-import  numpy as np
+import numpy as np
 
 # file="Datalog.txt"
 # data=np.loadtxt(file,delimiter='\t',skiprows=0)
 
 
 # importation of data
-file = "Datalog.csv"
+file = "Datalog.txt"
 
 (name_file, type_file) = file.split('.')
 
