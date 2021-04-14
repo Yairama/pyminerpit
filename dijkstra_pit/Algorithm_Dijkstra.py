@@ -1,6 +1,6 @@
 import numpy as np
 
-file = "Data_Dijkstra.csv"
+file = "../data/Data_Dijkstra.csv"
 Data = open(file, 'r').readlines()
 
 unvisited = []
