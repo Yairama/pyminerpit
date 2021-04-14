@@ -2,6 +2,10 @@
 
 Jus students looking for a futurist mining
 
+#### Meet the Team:
+- [Yair Camborda Morocho](https://www.linkedin.com/in/yairama/)
+- [Richard Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
+
 ## How to get our scripts
 
 - It's necessary to have [Git](https://git-scm.com) and [Python](https://www.python.org) installed
