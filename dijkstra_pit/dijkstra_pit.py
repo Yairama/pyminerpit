@@ -188,8 +188,11 @@ def backpedal(source, target, searchResult):
 
 
 if __name__ == '__main__':
+
     data = parse_data()
     cumulative_block = create_cumulative_block(data)
+
+
     __graph = create_simulated_block_model(cumulative_block)
     r, c = cumulative_block.shape
 

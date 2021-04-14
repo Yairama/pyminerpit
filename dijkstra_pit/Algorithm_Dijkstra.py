@@ -3,6 +3,9 @@ import numpy as np
 file = "../data/Data_Dijkstra.csv"
 Data = open(file, 'r').readlines()
 
+
+
+
 unvisited = []
 Array_Dijkstra = []
 Array_result = []
@@ -20,6 +23,7 @@ for i in Data:
 
 origen = 'A'
 final = 'P'
+
 count = 1
 
 origen2 = origen
