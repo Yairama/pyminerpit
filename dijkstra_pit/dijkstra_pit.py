@@ -7,7 +7,7 @@ from IPython.core.display import display
 def parse_data():
     print('************************************************************')
     print("PRIMARY REVENUE BLOCK MODEL:")
-    file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data/Datalog.txt'))
+    file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data/Datalog.csv'))
 
     (name_file, type_file) = file.split('g.')
     file_data = None
@@ -162,8 +162,6 @@ def search(source, target, graph, costs, parents):
             del graph[neighbor][nextNode]
 
         del costs[nextNode]
-
-        print(parents)
         nextNode = max(costs, key=costs.get)
 
     return parents
@@ -199,6 +197,8 @@ if __name__ == '__main__':
     __costs = calculate_costs(r,c)
     __parents = {}
     result = search('0-0', str(0)+'-'+str(c), __graph, __costs, __parents)
-    print('parent dictionary={}'.format(result))
 
-    print('longest path={}'.format(backpedal('0-0', str(0)+'-'+str(c), result)))
+    print('************************************************************')
+    print("RESULTS:")
+    print('parent dictionary={}'.format(result))
+    print('Optimum Pit Vertices path={}'.format(backpedal('0-0', str(0)+'-'+str(c), result)))
