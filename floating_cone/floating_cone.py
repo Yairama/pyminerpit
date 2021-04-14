@@ -5,7 +5,7 @@ import os
 
 
 # importation of data
-file = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data/Datalog.txt'))
+file = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data/Datalog.csv'))
 
 (name_file, type_file) = file.split('g.')
 
