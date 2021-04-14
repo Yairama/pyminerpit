@@ -33,7 +33,7 @@ For use this script you can change three parts important to execute the code:
   3. Define Final of route(change in the code)
 To run the scrip just open a cmd in the dijkstra_pit folder and run the command `python Algorithm_Dijkstra.py` and you will se the results of route in the console.
      
-This script is base for create new algorithms or improve other like:Open pit limit optimization using dijkstra’s algorithm
+This script is base for create new algorithms or improve other like:_Open pit limit optimization using dijkstra’s algorithm_
 
 ### Open pit limit optimization using dijkstra’s algorithm
 _Using dijkstra's script:_
@@ -42,7 +42,7 @@ The cone's data can be changed in the Datalog.csv/txt you can change the format 
 To run the scrip just open a cmd in the dijkstra_pit folder and run the command `python dijkstra_pit.py` and you will se the results in the console.
 - This algorithm has been extracted from the following paper: [Open pit limit optimization using dijkstra’s algorithm](https://ijmge.ut.ac.ir/article_75161_73cf9766e88e3e69c2b09d8707eeb612.pdf)
 - This algorithm has the same results as Lerch & Grossman's algorithm, but has better performance (We recommend read the paper's results)
-
+- It's very important to understand the Dijkstra algorithm to determine the shortest path. (check the script above)
 
 ## WE STILL DEVELOPING
 
