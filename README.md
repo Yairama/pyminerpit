@@ -18,4 +18,17 @@ Jus students looking for a futurist mining
 _Using floating cone:_
 
 The cone's data can be changed in the Datalog.csv/txt you can change the format in the code.
-To run the scrip just open a cmd in the project folder and run the command `python floating_cone.py` and you will se the results in the console.
+To run the scrip just open a cmd in the floating_cone folder and run the command `python floating_cone.py` and you will se the results in the console.
+
+### Open pit limit optimization using dijkstra’s algorithm
+_Using dijkstra's script:_
+
+The cone's data can be changed in the Datalog.csv/txt you can change the format in the code. 
+To run the scrip just open a cmd in the dijkstra_pit folder and run the command `python dijkstra_pit.py` and you will se the results in the console.
+- This algorithm has been extracted from the following paper: [Open pit limit optimization using dijkstra’s algorithm](https://ijmge.ut.ac.ir/article_75161_73cf9766e88e3e69c2b09d8707eeb612.pdf)
+- This algorithm has the same results as Lerch & Grossman's algorithm, but has better performance (We recommend read the paper's results)
+
+
+## WE STILL DEVELOPING
+
+![alt text](https://i.pinimg.com/originals/b1/4f/1c/b14f1c6d36b5102da0823d6c99929f12.gif)
