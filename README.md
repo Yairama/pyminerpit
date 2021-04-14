@@ -27,9 +27,8 @@ To run the scrip just open a cmd in the floating_cone folder and run the command
 ### Dijkstra’s algorithm to determine the shortest route
 _Using Algorithm Dijkstra script:_
 
-
-In this script you can change three part important to execute the code:
-  1. Data_Dijkstra.csv/txt (review)
+For use this script you can change three parts important to execute the code:
+  1. Data_Dijkstra.csv/txt (review data)
   2. Define Origen of route (change in the code)
   3. Define Final of route(change in the code)
 To run the scrip just open a cmd in the dijkstra_pit folder and run the command `python Algorithm_Dijkstra.py` and you will se the results of route in the console.
@@ -51,5 +50,6 @@ To run the scrip just open a cmd in the dijkstra_pit folder and run the command 
 
 ## ABOUT US
 
-![alt text](https://www.linkedin.com/in/yairama/)
-![alt text](https://www.linkedin.com/in/richardeberthalarconlima/)
+[Yair M. Camborda Morocho](https://www.linkedin.com/in/yairama/)
+[Richard E. Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
+

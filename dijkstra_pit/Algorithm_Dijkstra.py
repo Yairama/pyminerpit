@@ -1,6 +1,11 @@
 import numpy as np
 
+# ########################################## CHANGE ###############################
 file = "../data/Data_Dijkstra.csv"
+origen = 'A'
+final = 'P'
+# #################################################################################
+
 Data = open(file, 'r').readlines()
 
 
@@ -21,8 +26,7 @@ for i in Data:
 # print(Array_Dijkstra)
 
 
-origen = 'A'
-final = 'P'
+
 
 count = 1
 
