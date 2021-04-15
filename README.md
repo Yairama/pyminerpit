@@ -50,6 +50,6 @@ To run the scrip just open a cmd in the dijkstra_pit folder and run the command 
 
 ## ABOUT US
 
-[Yair M. Camborda Morocho](https://www.linkedin.com/in/yairama/)
-[Richard E. Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
+- [Yair M. Camborda Morocho](https://www.linkedin.com/in/yairama/)
+- [Richard E. Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
 
