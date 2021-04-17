@@ -18,13 +18,13 @@ _IT'S IMPORTANT USING --recursive PARAMETER_
 
 ## Done Things
 
-### Floating Cone Algorithm
+### <span style="color:green"> Floating Cone Algorithm </span>
 _Using floating cone:_
 
 The cone's data can be changed in the Datalog.csv/txt you can change the format in the code.
 To run the scrip just open a cmd in the floating_cone folder and run the command `python floating_cone.py` and you will se the results in the console.
 
-### Dijkstra’s algorithm to determine the shortest route
+### <span style="color:green"> Dijkstra’s algorithm to determine the shortest route </span>
 _Using Algorithm Dijkstra script:_
 
 For use this script you can change three parts important to execute the code:
@@ -35,7 +35,7 @@ To run the scrip just open a cmd in the dijkstra_pit folder and run the command 
      
 This script is base for create new algorithms or improve other like:_Open pit limit optimization using dijkstra’s algorithm_
 
-### Open pit limit optimization using dijkstra’s algorithm
+### <span style="color:green"> Open pit limit optimization using dijkstra’s algorithm </span>
 _Using dijkstra's script:_
 
 The cone's data can be changed in the Datalog.csv/txt you can change the format in the code. 
@@ -44,7 +44,7 @@ To run the scrip just open a cmd in the dijkstra_pit folder and run the command 
 - This algorithm has the same results as Lerch & Grossman's algorithm, but has better performance (We recommend read the paper's results)
 - It's very important to understand the Dijkstra algorithm to determine the shortest path. (check the script above)
 
-### Nicholas Method
+### <span style="color:green"> Nicholas Method.</span>
 
 _Instructions copied from `Nicholas Method/README.md` file, please review the [_Nicholas method_](https://gitlab.com/Yairama/NicholasMethod.git) Repository_
 
