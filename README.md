@@ -44,6 +44,25 @@ To run the scrip just open a cmd in the dijkstra_pit folder and run the command 
 - This algorithm has the same results as Lerch & Grossman's algorithm, but has better performance (We recommend read the paper's results)
 - It's very important to understand the Dijkstra algorithm to determine the shortest path. (check the script above)
 
+### Nicholas Method
+
+_Instructions copied from `Nicholas Method/README.md` file, please review the [_Nicholas method_](https://gitlab.com/Yairama/NicholasMethod.git) Repository_
+
+Application of the nicholas algorithm for the selection of the ideal mining method.
+
+This code is a small program created by @Yairama that uses
+the nicolás method to determine the type of exploitation method to be used in a mine.
+The entire graphical interface is programmed in java swing and no additional libraries are used.
+
+_How to use:_
+
+-In order to use the program it is necessary to have [Java](https://www.java.com/es/download/) installed.
+
+-You can download the already compiled program from the following [link](https://drive.google.com/drive/folders/1bJaWH1tzEO5ud8vJ3awrHlv82mYJN-uH?usp=sharing)
+
+-If you want the code it will be found inside _Metodo de nicholás Folder_
+
+
 ## WE STILL DEVELOPING
 
 ![alt text](https://i.pinimg.com/originals/b1/4f/1c/b14f1c6d36b5102da0823d6c99929f12.gif)
