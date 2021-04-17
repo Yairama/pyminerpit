@@ -1,0 +1,3 @@
+[submodule "NicholasMethod"]
+	path = NicholasMethod
+	url = https://gitlab.com/Yairama/NicholasMethod.git
