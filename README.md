@@ -11,9 +11,9 @@ Jus students looking for a futurist mining
 - It's necessary to have [Git](https://git-scm.com) and [Python](https://www.python.org) installed
 - Open a git bash and run the command 
     ``` 
-    git clone https://gitlab.com/Yairama/pyminerpit.git
+    git clone https://gitlab.com/Yairama/pyminerpit.git --recursive
     ```
-
+_IT'S IMPORTANT USING --recursive PARAMETER_
 
 
 ## Done Things
