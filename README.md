@@ -76,6 +76,7 @@ _How to use:_
   
 ```streamlit run ubc/ubc_gui.py```
 
+-The script will open in a tab of your default browser
 
 
 ## WE STILL DEVELOPING
