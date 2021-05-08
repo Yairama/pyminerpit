@@ -12,7 +12,7 @@ def parse_data():
     if type_file == 'txt':
         file_data = np.loadtxt(file, delimiter='\t', skiprows=0)
     elif type_file == 'csv':
-        file_data = np.loadtxt(file, delimiter=',', skiprows=0)
+        file_data = np.loadtxt(file, delimiter=';', skiprows=0)
     else:
         print('-----------file not defined-------')
         exit()
