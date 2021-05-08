@@ -62,6 +62,21 @@ _How to use:_
 
 -If you want the code it will be found inside _Metodo de nicholás Folder_
 
+### <span style="color:green"> UBC Method.</span>
+Application of the UBC algorithm for the selection of the ideal mining method.
+Source: UBC mining method selection - L. Miller-Tait, R. Pakalnis & R. Poulin (1995)
+
+_How to use:_
+
+-In order to use the program it is necessary to install StreamLit with the following command on a cmd prompt:
+
+```  pip install streamlit   ``` 
+
+-To open use the script run the following command in the project's root folder:
+  
+```streamlit run ubc/ubc_gui.py```
+
+
 
 ## WE STILL DEVELOPING
 
