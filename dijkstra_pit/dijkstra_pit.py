@@ -5,14 +5,14 @@ from IPython.core.display import display
 
 
 def parse_data():
-    file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data/Datalog.csv'))
+    file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data/Datalog.txt'))
 
     (name_file, type_file) = file.split('g.')
     file_data = None
     if type_file == 'txt':
         file_data = np.loadtxt(file, delimiter='\t', skiprows=0)
     elif type_file == 'csv':
-        file_data = np.loadtxt(file, delimiter=';', skiprows=0)
+        file_data = np.loadtxt(file, delimiter= ' ', skiprows=0)
     else:
         print('-----------file not defined-------')
         exit()
@@ -120,8 +120,8 @@ def create_simulated_block_model(cumulative_block_):
 
 def calculate_costs(r_, c_):
     costs = {}
-    for row in range(r + 1):
-        for column in range(c + 1):
+    for row in range(r_ + 1):
+        for column in range(c_ + 1):
             if row == 0 and column == 0:
                 costs[str(row) + '-' + str(column)] = 0
             else:
@@ -137,7 +137,7 @@ def search(source, target, graph, costs, parents):
         nn = nextNode.split("-")
         for neighbor in graph[nextNode]:
             nb = neighbor.split("-")
-            if graph[nextNode][neighbor] + costs[nextNode] >= costs[neighbor] and nb[1] >= nn[1]:
+            if graph[nextNode][neighbor] + costs[nextNode] > costs[neighbor] and nb[1] > nn[1]:
                 costs[neighbor] = graph[nextNode][neighbor] + costs[nextNode]
                 # print("NEXT NODE:", nextNode)
                 # print("COST NEXT NODE:", costs[nextNode])
