@@ -77,8 +77,8 @@ _How to use:_
 ```streamlit run ubc/ubc_gui.py```
 
 -The script will open in a tab of your default browser
-
-
+### <span style="color:green"> Lerch Grossman.</span>
+Optimice a pit, using an algorith.
 ## WE STILL DEVELOPING
 
 ![alt text](https://i.pinimg.com/originals/b1/4f/1c/b14f1c6d36b5102da0823d6c99929f12.gif)
