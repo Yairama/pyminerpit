@@ -3,36 +3,36 @@ import tkinter as tkr
 
 print('**********LERSCH-GROSSMAN´s ALGORITHM**********', '\n')
 
-# Importemos la matriz de bloques
-name = input('Ingrese el nombre del archivo: ')
-matriz = np.loadtxt(name + '.txt')
-print('\n*** La matriz inicial es:')
-print(matriz)
-# Se inserta una fila de ceros para los calculos posteriores
-(fil, col) = np.shape(matriz)
-M1 = matriz.copy()
-f_cero = [list(np.zeros(col))]  # Para generar un arreglo 2D (lista de lista)
+# Let's import the block matrix
+name = input('Enter the file name : ')
+matrix = np.loadtxt(name + '.txt')
+print('\n*** The initial matrix is :')
+print(matrix)
+# A row of zeros is inserted for subsequent calculations
+(fil, col) = np.shape(matrix)
+M1 = matrix.copy()
+f_cero = [list(np.zeros(col))]  # To generate a 2D array (list list)
 M1 = np.append(f_cero, M1, axis=0)
-print(f'\n***** Numero de filas: {fil} y columnas: {col} *****')
+print(f'\n***** Number of rows: {fil} and columns: {col} *****')
 
-# Se realiza la suma escalonada
+# The step sum is performed
 M2 = M1.copy()
 for j in range(col):
     for i in range(1, fil + 1):
         M2[i, j] = M2[i, j] + M2[i - 1, j]
-print('\n*** Matriz con la suma escalonada:')
+print('\n*** Matrix with the step sum:')
 print(M2, '\n')
 
-# Suma de la 1ra Columna agregando los bloques de valor (-2)
+# Sum of the 1st Column adding the value blocks (-2)
 M3 = M2.copy()
-val = int(input('Valor de los bloques estéril: '))
+val = int(input('waste blocks value : '))
 for i in range(1, fil + 1):
     M3[i, 0] = M3[i, 0] + (i * (i - 1) / 2) * val
 
-print('\n*** Veamos la Primera fila ***')
-print(M3[:, 0:1])  # imprime primera columna de matriz M3
+print('\n***Lets see the first row ***')
+print(M3[:, 0:1])  # print first column of matrix M3
 
-# Se escoje el maximo valor de los 3 bloques más cercanos
+# The maximum value of the 3 closest blocks is chosen
 for j in range(1, col):
     for i in range(1, fil + 1):
         if i != fil:
@@ -40,66 +40,63 @@ for j in range(1, col):
         else:
             M3[i, j] = M3[i, j] + max(M3[i - 1, j - 1], M3[i, j - 1])
 
-# Viendo la Matriz real
+# Seeing the real Matrix
 MO = M3.copy()
 MO = MO[1:, :]
-print('\n*** Matriz del Pit Optimo:')
+print('\n*** Pit Optimum Matrix :')
 print(MO)
 
-# Identificando el contorno del Pit Optimo
-L_fil = []
+# Identifying the Pit Optimum contour
+L_row = []
 L_col = []
-fila = 1
-maximo = max(M3[fila])
-colu = np.where(M3[fila] == maximo)[0][0]  # inicia la busqueda en la fila 1 y obtiene la columna del mayor
-while maximo != 0:  # sirve mucho xd
-    L_fil.append(fila)
-    L_col.append(colu)
-    valores = [M3[fila - 1, colu - 1], M3[fila, colu - 1], M3[fila + 1, colu - 1]]
-    maximo = max(valores)
+row = 1
+maximo = max(M3[row])
+column = np.where(M3[row] == maximo)[0][0]  # starts the search in row 1 and gets the column of the largest
+while maximo != 0:  # avoid zero so as not to take the first row of zeros
+    L_row.append(row)
+    L_col.append(column)
+    values = [M3[row - 1, column - 1], M3[row, column - 1], M3[row + 1, column - 1]]
+    maximo = max(values)
 
-    colu = colu - 1
-    if maximo == valores[0]:
-        fila = fila - 1  # hace que suba hacia la superficie
-    elif maximo == valores[2]:
-        fila = fila + 1
-        # hace que baje al fondo del pit
+    column = column - 1
+    if maximo == values[0]:
+        row = row - 1  # makes it rise to the surface
+    elif maximo == values[2]:
+        row = row + 1
+        # makes it go down to the bottom of the pit
 
-# L_fil.reverse()
-# L_col.reverse()
-
-### Creando la Interfaz
-# La raiz
-matriz = tkr.Tk()
-matriz.title('Pit Óptimo')
+# Creating the Interface
+# The root
+matrix = tkr.Tk()
+matrix.title('Optimum Pit')
 geo = str(col * 80) + 'x' + str(fil * 60)
-matriz.geometry(geo)
+matrix.geometry(geo)
 
 # El frame o ambiente
 myFrame = tkr.Frame()
 myFrame.pack(fill='both', expand=True)
 myFrame.config(background='lightyellow')
-# Labels para los bloques valorizados
+# Labels for the valued blocks
 final_value = 0
 for j in range(0, col):
     for i in range(1, fil + 1):
-        texto = str(int(M1[i, j]))
+        text = str(int(M1[i, j]))
         if j in L_col:
-            indice = L_col.index(j)
-            if i <= L_fil[indice]:
-                myLabel = tkr.Label(myFrame, text=texto, font=('Arial', 28),
-                                    # verde cuando está por encima de la linea final del pit optimo
+            indexx = L_col.index(j)
+            if i <= L_row[indexx]:
+                myLabel = tkr.Label(myFrame, text=text, font=('Arial', 28),
+                                    # green when above the final line of the optimal pit
                                     background='lightgreen', width=3)
                 final_value = final_value + int(M1[i, j])
-
+                # we will use matrix M1 because this is the initial
             else:
-                myLabel = tkr.Label(myFrame, text=texto, font=('Arial', 28),
-                                    # rojo cuando está por debajo de la linea final del pit optimo
+                myLabel = tkr.Label(myFrame, text=text, font=('Arial', 28),
+                                    # red when below the final line of the optimal pit
                                     background='red', width=3)
         else:
-            myLabel = tkr.Label(myFrame, text=texto, font=('Arial', 28),  # rojo cuando la columna no está en L_col
+            myLabel = tkr.Label(myFrame, text=text, font=('Arial', 28),  # red when column is not in L_col
                                 background='red', width=3)
         myLabel.grid(row=i + 1, column=j + 1, padx=3, pady=3)
 
-print('\n******valor final del pit optimo es', final_value, '********')
-matriz = tkr.mainloop()
+print('\n******final value of the optimal pit is', final_value, '********')
+matrix = tkr.mainloop()
