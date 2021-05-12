@@ -1,7 +1,7 @@
 import numpy as np
 import tkinter as tkr
 
-print('********** ALGORITMO DE LERSCH-GROSSMAN **********', '\n')
+print('**********LERSCH-GROSSMAN´s ALGORITHM**********', '\n')
 
 # Importemos la matriz de bloques
 name = input('Ingrese el nombre del archivo: ')
