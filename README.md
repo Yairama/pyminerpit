@@ -83,8 +83,3 @@ Optimice a pit, using an algorith.
 
 ![alt text](https://i.pinimg.com/originals/b1/4f/1c/b14f1c6d36b5102da0823d6c99929f12.gif)
 
-## ABOUT US
-
-- [Yair M. Camborda Morocho](https://www.linkedin.com/in/yairama/)
-- [Richard E. Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
-- [Nelson A. Aróstegui Castro](https://www.linkedin.com/in/nelson-amadeo-arostegui-castro/)
