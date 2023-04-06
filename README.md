@@ -1,10 +1,22 @@
 # PyMinerPit
 
-Jus students looking for a futurist mining
+<p>
+  <a href="https://www.linkedin.com/in/yairama/" rel="nofollow noreferrer">
+    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin" class="icon" width="20" height="20"> LinkedIn
+  </a> &nbsp; 
+  <a href="https://github.com/Yairama" rel="nofollow noreferrer">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" class="icon" width="20" height="20"> Github
+  </a> &nbsp; 
+  <a href="https://github.com/Yairama" rel="nofollow noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968853.png" alt="gitlab" class="icon" width="20" height="20"> Gitlab
+  </a>
+</p>
+
+Just students looking for a futurist mining
 
 #### Meet the Team:
 - [Yair Camborda Morocho](https://www.linkedin.com/in/yairama/)
-- [Richard Alarcon Lima](https://www.linkedin.com/in/richardeberthalarconlima/)
+- Richard Alarcon Lima
 
 ## How to get our scripts
 
@@ -79,7 +91,7 @@ _How to use:_
 -The script will open in a tab of your default browser
 ### <span style="color:green"> Lerch Grossman.</span>
 Optimice a pit, using an algorith.
-## WE STILL DEVELOPING
+## WE STILL DEVELOPING (No we don't xD)
 
 ![alt text](https://i.pinimg.com/originals/b1/4f/1c/b14f1c6d36b5102da0823d6c99929f12.gif)
 
